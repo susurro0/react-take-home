@@ -1,8 +1,7 @@
 import * as React from "react";
 
+import { Row, Col, Card, Image, Stack } from "react-bootstrap";
 import "./Campaign.css";
-
-import { Row, Col, Image, Stack } from "react-bootstrap";
 
 function Campaign(props) {
   return (
@@ -17,12 +16,8 @@ function Campaign(props) {
         </Col>
         <Col className="info_container">
           <div>
-            <div className="campaign_name">
-              Campaign name
-            </div>
-            <div className="pay_per_install">
-              pay per install
-            </div>
+            <Card.Title className="campaign_name">Campaign</Card.Title>
+            <Card.Text className="pay_per_install">pay per install</Card.Text>
           </div>
         </Col>
       </Row>
