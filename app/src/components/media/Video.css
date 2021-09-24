@@ -1,0 +1,14 @@
+
+
+.btn_play{
+
+}
+
+.btn_play_hidden{
+    
+    visibility: hidden;
+}
+
+.btn_play.active {
+  background-color:transparent;
+}

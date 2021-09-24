@@ -18,7 +18,10 @@ function Video(props) {
 
   return (
     <>
-      <Button variant="primary">
+      <Button
+        variant="primary"
+        className={!isPlaying ? "btn_play" : "btn_play_hidden"}
+      >
         <BsFillCaretRightFill />
       </Button>
       <video
