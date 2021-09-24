@@ -1,12 +1,15 @@
 import React from 'react'
 import Campaign from '../components/campaign/Campaign';
 
+import MediaImage from '../components/media/MediaImage'
+import Video from '../components/media/Video';
 function HomeScreen(props) {
   return (
-    
-      <div> <Campaign /></div>
-      
-    
+    <div>
+      {" "}
+      <MediaImage src="https://placekitten.com/200/300" />
+      <Video src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
+    </div>
   );
 }
 
