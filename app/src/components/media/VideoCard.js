@@ -7,10 +7,16 @@ import Image from "./MediaImage";
 
 import { BsDownload, BsLink } from "react-icons/bs";
 
+/**
+ * time animation for download btn
+ */
 function simulateNetworkRequest() {
   return new Promise((resolve) => setTimeout(resolve, 2000));
 }
 
+/**
+ * Download file function, check file type -> change name 
+ */
 const download = (url, type) => {
   fetch(url)
     .then((resp) => resp.blob())
@@ -33,7 +39,16 @@ const download = (url, type) => {
     );
 };
 
-
+/**
+ * VideoCard component, returns VideoCars with Video/Image, copy btn, download btn
+ * @param {object} props Component props, 
+ * object.medias = [
+ * {
+ *      download_url: {url}
+ *      media_type: {string}
+ * }
+ * ]
+ */
 function VideoCard(props) {
   const [isLoading, setLoading] = useState(false);
 

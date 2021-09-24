@@ -4,9 +4,18 @@ import "./Video.css";
 import { BsFillCaretRightFill } from "react-icons/bs";
 import { Button } from "react-bootstrap";
 
+
+/**
+ * Video Component, returns Video
+ * @param {object} props Component props, 
+ * src = { url}
+ */
 function Video(props) {
   const [isPlaying, setIsPlaying] = useState(false);
   
+
+  //click event on video
+  //play/pause video, show/hide  play btn
   const playVideoHandler = (e) => {
     if (isPlaying) {
       e.target.pause();

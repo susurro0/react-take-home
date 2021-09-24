@@ -4,9 +4,12 @@ import './App.css';
 import HomeScreen from './pages/HomeScreen';
 import { useEffect, useState } from "react";
 
+
+
 function App() {
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState([]);
+  //fetch data from db/server
   useEffect(() => {
     fetch("https://www.plugco.in/public/take_home_sample_feed")
       .then((response) => {
@@ -19,7 +22,7 @@ function App() {
 
       });
   }, []);
-
+  //show loading screen while loading
   if (isLoading) {
     return (
       <section>
@@ -27,6 +30,7 @@ function App() {
       </section>
     );
   }
+  
   if (data !== undefined || data.length !== 0) {
     return (
       <div>

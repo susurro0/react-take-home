@@ -4,6 +4,16 @@ import { ListGroup } from "react-bootstrap";
 import VideoCard from "./VideoCard";
 import "./MediaList.css";
 
+/**
+ * MediaList Component, returns VideoCars of all medias
+ * @param {object} props Component props, 
+ * object.medias = [
+ * {
+ *      download_url: {url}
+ *      media_type: {string}
+ * }
+ * ]
+ */
 function MediaList(props) {
   return (
     <ListGroup horizontal className="list">

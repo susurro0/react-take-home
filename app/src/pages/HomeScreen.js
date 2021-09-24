@@ -3,8 +3,13 @@ import React from 'react';
 import { ListGroup, Navbar, Container, Nav } from "react-bootstrap";
 import CampaignCard from "../components/campaign/CampaignCard";
 
+/**
+ * Home Screen returns Dummy navbar & list of all Campaigns 
+ * @param {object} props Component props, 
+ */
 function HomeScreen(props) {
  
+  //catch error if list is empty
   if (props.data.campaigns !== undefined){
     return (
       <>

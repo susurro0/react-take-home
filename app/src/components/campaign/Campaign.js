@@ -2,6 +2,16 @@ import * as React from "react";
 
 import {Row, Col, Card, Image, Stack } from "react-bootstrap";
 import "./Campaign.css";
+/**
+ * Campaign Component, shows logo, campaign name and pay per installs
+ * @param {object} props Component props, 
+ * {
+ *  campaign_icon_url: {url}
+ *  campaign_name: {string}
+ *  pay_per_install: {number}
+ * }
+ *
+ */
 
 function Campaign(props) {
   return (
