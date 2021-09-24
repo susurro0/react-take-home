@@ -1,9 +1,10 @@
 import React from 'react'
+import Campaign from '../components/campaign/Campaign';
 
 function HomeScreen(props) {
   return (
     
-      <div> Home Screen</div>
+      <div> <Campaign /></div>
       
     
   );
