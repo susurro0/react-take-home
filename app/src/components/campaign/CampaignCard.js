@@ -4,9 +4,11 @@ import MediaList from "../media/MediaList";
 import Campaign from "./Campaign";
 
 function CampaignCard(props) {
+
+    console.log(props.data);
   return (
     <>
-      <Campaign />
+      <Campaign/>
       <MediaList />
     </>
   );

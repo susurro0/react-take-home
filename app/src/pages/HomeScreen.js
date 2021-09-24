@@ -1,12 +1,8 @@
-import React from 'react'
-import { Navbar, Container, Nav } from "react-bootstrap";
+import React from 'react';
+
+import { ListGroup, Navbar, Container, Nav } from "react-bootstrap";
 import CampaignCard from "../components/campaign/CampaignCard";
 
-
-import MediaImage from '../components/media/MediaImage'
-import MediaList from '../components/media/MediaList';
-import Video from '../components/media/Video';
-import VideoCard from '../components/media/VideoCard';
 function HomeScreen(props) {
   return (
     <>
@@ -21,7 +17,18 @@ function HomeScreen(props) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <CampaignCard />
+      <ListGroup className="list">
+        {props.data.map((data, id) => (
+          <ListGroup.Item
+            style={{
+              border: "none",
+            }}
+            className="bg-transparent"
+          >
+            <CampaignCard data={data} key={id} />
+          </ListGroup.Item>
+        ))}
+      </ListGroup>
     </>
   );
 }
