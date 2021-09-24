@@ -6,6 +6,7 @@ import { Button } from "react-bootstrap";
 
 function Video(props) {
   const [isPlaying, setIsPlaying] = useState(false);
+  
   const playVideoHandler = (e) => {
     if (isPlaying) {
       e.target.pause();

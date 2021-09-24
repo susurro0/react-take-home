@@ -32,6 +32,8 @@ const download = (url, type) => {
       )
     );
 };
+
+
 function VideoCard(props) {
   const [isLoading, setLoading] = useState(false);
 
