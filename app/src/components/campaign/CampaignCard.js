@@ -8,6 +8,7 @@ function CampaignCard(props) {
     <>
       <Campaign data={props.data} key={props.id} />
       <MediaList medias={props.data.medias} key={props.id} />
+      <hr/>
     </>
   );
 }

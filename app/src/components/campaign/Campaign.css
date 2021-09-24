@@ -2,11 +2,12 @@
     display: flex;
     align-items: flex-start;
     width: 20rem;
+    margin-left: 1rem;
 }
 
 .logo{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     align-self: center;
 }
 .info_container{

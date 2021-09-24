@@ -16,7 +16,7 @@ function Campaign(props) {
               {props.data.campaign_name}
             </Card.Title>
             <Card.Text className="pay_per_install">
-              {props.data.pay_per_install + " per install"}
+              {props.data.pay_per_install + "per install"}
             </Card.Text>
           </div>
         </Col>
