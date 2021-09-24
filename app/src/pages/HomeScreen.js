@@ -1,5 +1,6 @@
 import React from 'react'
 import Campaign from '../components/campaign/Campaign';
+import CampaignCard from '../components/campaign/CampaignCard';
 
 import MediaImage from '../components/media/MediaImage'
 import MediaList from '../components/media/MediaList';
@@ -9,7 +10,7 @@ function HomeScreen(props) {
   return (
     <div>
       
-      <MediaList src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
+      <CampaignCard/>
     </div>
   );
 }
