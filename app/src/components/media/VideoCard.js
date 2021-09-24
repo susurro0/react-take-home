@@ -24,9 +24,10 @@ function VideoCard(props) {
   const handleClick = (e) => {
     setLoading(true);
   };
-  const copyLinkHandler = () => {
-    console.log("Copy link");
-  };
+   const copyLinkHandler = () => {
+     console.log("Copy link");
+     navigator.clipboard.writeText('copy link');
+   };
   return (
     <Card className="video_card">
       <Image src="https://placekitten.com/200/300" />
