@@ -44,17 +44,20 @@ function VideoCard(props) {
   }, [isLoading]);
 
   const handleClick = (e) => {
-    download("https://placekitten.com/200/300", 'img');
-
+    download(props.media.download_url);
     setLoading(true);
   };
-   const copyLinkHandler = () => {
-     console.log("Copy link");
-     navigator.clipboard.writeText('copy link');
-   };
+  const copyLinkHandler = () => {
+    console.log("Copy link");
+    navigator.clipboard.writeText(props.media.download_url);
+  };
   return (
     <Card className="video_card">
-      <Image src="https://placekitten.com/200/300" />
+      {props.media.media_type === "video" ? (
+        <Video src={props.media.download_url} />
+      ) : (
+        <Image src={props.media.download_url} />
+      )}
       <Row className="btn_container">
         <ButtonGroup aria-label="Basic example">
           <Button
@@ -78,7 +81,7 @@ function VideoCard(props) {
             ) : (
               <BsDownload />
             )}
-          </Button>
+          </Button>{" "}
         </ButtonGroup>
       </Row>
     </Card>
