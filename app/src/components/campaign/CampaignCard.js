@@ -8,8 +8,8 @@ function CampaignCard(props) {
     console.log(props.data);
   return (
     <>
-      <Campaign/>
-      <MediaList />
+      <Campaign data={props.data} key={props.id} />
+      <MediaList medias={props.data.medias} key={props.id} />
     </>
   );
 }
