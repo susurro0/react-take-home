@@ -7,7 +7,7 @@ import { Row, Col, Image, Stack } from "react-bootstrap";
 function Campaign(props) {
   return (
     <Stack direction="horizontal" gap={3}>
-      <Row className="campaign_container">
+      <Row>
         <Col className="image_container">
           <Image
             src="https://placekitten.com/200/300"

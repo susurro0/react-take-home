@@ -1,0 +1,29 @@
+.image_container {
+    display: flex;
+    align-items: flex-start;
+    width: 20rem;
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    align-self: center;
+}
+
+.info_container{
+    display: flex;
+    align-items: flex-start;
+
+
+}
+.info_container :first-child {
+    align-self: center;
+}
+
+.campaign_name{
+    font-weight: bold;
+}
+
+.pay_per_install{
+    color: green;
+}
