@@ -6,8 +6,7 @@ import Video from '../components/media/Video';
 function HomeScreen(props) {
   return (
     <div>
-      {" "}
-      <MediaImage src="https://placekitten.com/200/300" />
+      
       <Video src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
     </div>
   );
