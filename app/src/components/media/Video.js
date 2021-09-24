@@ -1,4 +1,4 @@
-import React,; { useState } from "react";
+import React, { useState } from "react";
 import "./Video.css";
 
 import { BsFillCaretRightFill } from "react-icons/bs";
@@ -14,8 +14,6 @@ function Video(props) {
       e.target.play();
       setIsPlaying(true);
     }
-
-    console.log(e.target.firstChild.nodeValue);
   };
 
   return (
