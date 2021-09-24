@@ -6,8 +6,8 @@ import Campaign from "./Campaign";
 function CampaignCard(props) {
   return (
     <>
-        <Campaign />
-        <MediaList />
+      <Campaign />
+      <MediaList />
     </>
   );
 }
