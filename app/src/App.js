@@ -28,7 +28,7 @@ function App() {
   console.log(data.campaigns);
   return (
     <div>
-      
+      <HomeScreen data={data.campaigns} />
     </div>
   );
 }
