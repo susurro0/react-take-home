@@ -1,23 +1,23 @@
 import * as React from "react";
 
-import { Row, Col, Card, Image, Stack } from "react-bootstrap";
+import {Row, Col, Card, Image, Stack } from "react-bootstrap";
 import "./Campaign.css";
 
 function Campaign(props) {
   return (
     <Stack direction="horizontal" gap={3}>
-      <Row>
+      <Row className="campaign_container">
         <Col className="image_container">
-          <Image
-            src="https://placekitten.com/200/300"
-            rounded
-            className="logo"
-          />
+          <Image src={props.data.campaign_icon_url} rounded className="logo" />
         </Col>
         <Col className="info_container">
           <div>
-            <Card.Title className="campaign_name">Campaign</Card.Title>
-            <Card.Text className="pay_per_install">pay per install</Card.Text>
+            <Card.Title className="campaign_name">
+              {props.data.campaign_name}
+            </Card.Title>
+            <Card.Text className="pay_per_install">
+              {props.data.pay_per_install + " per install"}
+            </Card.Text>
           </div>
         </Col>
       </Row>
