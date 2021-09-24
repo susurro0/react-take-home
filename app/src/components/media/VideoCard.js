@@ -10,6 +10,28 @@ import { BsDownload, BsLink } from "react-icons/bs";
 function simulateNetworkRequest() {
   return new Promise((resolve) => setTimeout(resolve, 2000));
 }
+
+const download = (url, type) => {
+  fetch(url)
+    .then((resp) => resp.blob())
+    .then((blob) => {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.style.display = "none";
+      a.href = url;
+      a.download = (type === "video")
+        ? "video.mp4"
+        : "image.jpg"
+      document.body.appendChild(a);
+      a.click();
+      alert("Your file has downloaded!"); 
+    })
+    .catch(() =>
+      alert(
+        "Error"
+      )
+    );
+};
 function VideoCard(props) {
   const [isLoading, setLoading] = useState(false);
 
@@ -22,6 +44,8 @@ function VideoCard(props) {
   }, [isLoading]);
 
   const handleClick = (e) => {
+    download("https://placekitten.com/200/300", 'img');
+
     setLoading(true);
   };
    const copyLinkHandler = () => {
