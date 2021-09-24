@@ -9,7 +9,6 @@
     height: 120px;
     align-self: center;
 }
-
 .info_container{
     display: flex;
     align-items: flex-start;
@@ -19,6 +18,8 @@
 .info_container :first-child {
     align-self: center;
 }
+
+
 
 .campaign_name{
     font-weight: bold;

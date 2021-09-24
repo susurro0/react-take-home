@@ -1,0 +1,6 @@
+.media_image {
+    width: inherit !important;
+    height: 15rem;
+    border-radius: 10px !important;
+    padding: 0.3rem;
+}

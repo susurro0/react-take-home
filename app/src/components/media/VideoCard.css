@@ -1,0 +1,14 @@
+.video_card{
+    width: 9rem;
+}
+
+.btn_container{
+    padding: 0.5rem;
+    align-content: center;
+     display: flex;
+    align-items: flex-start;
+}
+
+
+
+

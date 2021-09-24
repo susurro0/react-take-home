@@ -1,0 +1,41 @@
+.list {
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-bottom: 0.5rem;
+}
+
+.listgroup{
+    border-color: transparent;
+    box-shadow: transparent;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+
+}
+
+::-webkit-scrollbar {
+  height: 0.3rem
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lightgrey; 
+    border-radius: 1rem;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:lightblue; 
+}
